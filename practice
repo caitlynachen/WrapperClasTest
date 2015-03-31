@@ -1,0 +1,29 @@
+# WrapperClasTest
+package jrJava.wrapperClassTest;
+
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String[] args) {
+	
+	boolean[]  numbers = new boolean [] {true,true,false,true,false};
+		
+		ArrayList<Boolean> list = new ArrayList<Boolean>();
+		
+		for(int i=0; i<numbers.length; i++){
+			Boolean each = new Boolean(numbers[i]);
+			list.add(each);
+			
+		}
+		
+		for(int i=0; i<list.size(); i++){
+			Boolean each = list.get(i);
+			boolean eachValue = each.booleanValue();
+			System.out.println(eachValue);
+		}
+		}
+
+	}
+
+
